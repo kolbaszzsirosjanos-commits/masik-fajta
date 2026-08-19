@@ -1,0 +1,75 @@
+<!DOCTYPE html><html lang="hu"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Rácz Kálmán Attila — Festő & Építő</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0b0d10;--panel:#12151b;--panel2:#171b22;--line:#242a33;--text:#e8e6e1;--muted:#9aa0a8;--accent:#b58a4a}
+*{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+h1,h2,h3{font-family:'Playfair Display',serif}
+nav{position:fixed;top:0;width:100%;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:18px 48px;background:rgba(11,13,16,.85);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.logo{font-family:'Playfair Display',serif;font-size:22px;letter-spacing:2px}.logo span{color:var(--accent)}
+nav ul{display:flex;gap:32px;list-style:none}nav a{color:var(--muted);text-decoration:none;font-size:14px;letter-spacing:1px;transition:color .2s}nav a:hover{color:var(--text)}
+.nav-cta{border:1px solid var(--accent);color:var(--accent);padding:10px 22px;font-size:13px;letter-spacing:1px;transition:all .2s}.nav-cta:hover{background:var(--accent);color:var(--bg)}
+.hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;padding:0 48px;background:radial-gradient(ellipse 60% 50% at 75% 30%,rgba(181,138,74,.08),transparent),linear-gradient(160deg,#0e1116,#0b0d10 55%,#090a0d)}
+.kicker{color:var(--accent);font-size:13px;letter-spacing:4px;text-transform:uppercase;margin-bottom:20px}
+.hero h1{font-size:clamp(40px,5.5vw,76px);font-weight:500;line-height:1.08;max-width:820px}
+.hero p{color:var(--muted);font-size:18px;max-width:580px;margin:28px 0 40px}
+.btn-group{display:flex;gap:16px;flex-wrap:wrap}.btn{padding:16px 34px;font-size:14px;letter-spacing:1px;text-decoration:none;border:1px solid var(--line);color:var(--text);transition:all .2s}
+.btn-primary{background:var(--accent);border-color:var(--accent);color:var(--bg);font-weight:600}.btn-primary:hover{background:transparent;color:var(--accent)}.btn:hover{border-color:var(--accent)}
+section{padding:100px 48px}.wrap{max-width:1100px;margin:0 auto}.sec-head{margin-bottom:56px}
+.sec-head .kicker{color:var(--accent);font-size:12px;letter-spacing:4px;text-transform:uppercase;margin-bottom:12px}
+.sec-head h2{font-size:clamp(28px,4vw,44px);font-weight:500}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;background:var(--panel);border:1px solid var(--line);padding:40px}
+.stat h3{font-size:38px;color:var(--accent);font-weight:500}.stat p{color:var(--muted);font-size:13px;letter-spacing:1px;text-transform:uppercase}
+.services{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.card{background:var(--panel);border:1px solid var(--line);padding:36px;transition:transform .25s,border-color .25s}.card:hover{transform:translateY(-6px);border-color:var(--accent)}
+.card .num{color:var(--accent);font-size:13px;letter-spacing:2px}.card h3{font-size:22px;margin:16px 0 12px;font-weight:500}.card p{color:var(--muted);font-size:15px}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}.step{background:var(--panel2);border:1px solid var(--line);padding:36px}
+.step .num{font-family:'Playfair Display',serif;font-size:44px;color:var(--accent);line-height:1}.step h3{font-size:20px;margin:16px 0 10px;font-weight:500}.step p{color:var(--muted);font-size:15px}
+.cta{text-align:center;background:var(--panel);border:1px solid var(--line);padding:80px 40px}
+.cta h2{font-size:clamp(28px,4vw,42px);font-weight:500;margin-bottom:16px}.cta p{color:var(--muted);max-width:480px;margin:0 auto 36px}
+.cta .tel{font-family:'Playfair Display',serif;font-size:clamp(26px,3.5vw,38px);color:var(--accent);display:block;margin-bottom:24px;text-decoration:none}
+.wa-float{position:fixed;bottom:24px;right:24px;z-index:200;width:62px;height:62px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 20px rgba(37,211,102,.45);transition:transform .2s}.wa-float:hover{transform:scale(1.12)}.wa-float svg{width:32px;height:32px;fill:#0b0d10}
+footer{padding:40px 48px;border-top:1px solid var(--line);display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;color:var(--muted);font-size:13px;letter-spacing:1px}
+@media(max-width:900px){nav{padding:16px 24px}nav ul{display:none}.hero{padding:0 24px}section{padding:70px 24px}.stats{grid-template-columns:repeat(2,1fr)}.services,.steps{grid-template-columns:1fr}}
+</style></head><body>
+
+<nav><div class="logo">RÁCZ<span>FESTŐ</span></div>
+<ul><li><a href="#services">Szolgáltatások</a></li><li><a href="#steps">Így dolgozom</a></li><li><a href="#contact">Kapcsolat</a></li></ul>
+<a class="nav-cta" href="https://wa.me/36702668663?text=Szia!%20%C3%81raj%C3%A1nlatot%20szeretn%C3%A9k%20k%C3%A9rni%20fest%C3%A9sre." target="_blank">WhatsApp árajánlat</a></nav>
+
+<header class="hero"><div class="kicker">Festő & építő • Szeged • Rácz-Festő Bau Kft.</div>
+<h1>Festéstől a hőszigetelésig — egy vállalkozás, teljes körű megoldás.</h1>
+<p>Kft.-ként számlaképes, garanciával dolgozunk: festés, hőszigetelés, gipszkarton, burkolás.</p>
+<div class="btn-group"><a class="btn btn-primary" href="https://wa.me/36702668663?text=Szia!%20%C3%81raj%C3%A1nlatot%20szeretn%C3%A9k%20k%C3%A9rni%20fest%C3%A9sre." target="_blank">💬 Ingyenes árajánlat</a><a class="btn" href="tel:+36702668663">Hívás: +36 70 266 8663</a></div></header>
+
+<div class="wrap"><section class="stats">
+<div class="stat"><h3>Kft.</h3><p>Számlaképes</p></div>
+<div class="stat"><h3>200+</h3><p>Elkészült projekt</p></div>
+<div class="stat"><h3>6+</h3><p>Szolgáltatás</p></div>
+<div class="stat"><h3>Garancia</h3><p>Vállalt munkára</p></div></section></div>
+
+<section id="services"><div class="wrap"><div class="sec-head"><div class="kicker">Szolgáltatások</div><h2>Miben tudunk segíteni</h2></div>
+<div class="services">
+<div class="card"><div class="num">01</div><h3>Szobafestés</h3><p>Lakossági és üzleti festés, precíz kivitelben.</p></div>
+<div class="card"><div class="num">02</div><h3>Mázolás & tapétázás</h3><p>Mázolási munkák és hibátlan tapétázás.</p></div>
+<div class="card"><div class="num">03</div><h3>Homlokzati hőszigetelés</h3><p>Külső hőszigetelés és homlokzatfestés komplett kivitelben.</p></div>
+<div class="card"><div class="num">04</div><h3>Gipszkarton szerelés</h3><p>Válaszfalak, álmennyezetek, gipszkarton munkák.</p></div>
+<div class="card"><div class="num">05</div><h3>Padlóburkolás</h3><p>Melegburkolás, parketta, laminált padló lerakása.</p></div>
+<div class="card"><div class="num">06</div><h3>Kőműves munkák</h3><p>Kisebb építési munkák, felújítási segédmunkák.</p></div></div></div></section>
+
+<section id="steps"><div class="wrap"><div class="sec-head"><div class="kicker">Így dolgozunk</div><h2>Három egyszerű lépés</h2></div>
+<div class="steps">
+<div class="step"><div class="num">1</div><h3>Felmérés</h3><p>Kimegyünk, felmérjük a helyszínt, és tanácsot adunk.</p></div>
+<div class="step"><div class="num">2</div><h3>Írásos árajánlat</h3><p>Fix ár, számlaképes, rejtett költség nélkül.</p></div>
+<div class="step"><div class="num">3</div><h3>Precíz kivitelezés</h3><p>Tiszta munka, betartott határidő, átadás-átvétel.</p></div></div></div></section>
+
+<section id="contact"><div class="wrap cta"><h2>Ingyenes árajánlatot szeretne?</h2>
+<p>Hívjon vagy írjon, és 24 órán belül egyeztetünk.</p>
+<a class="btn btn-primary" href="https://wa.me/36702668663?text=Szia!%20%C3%81raj%C3%A1nlatot%20szeretn%C3%A9k%20k%C3%A9rni%20fest%C3%A9sre." target="_blank">💬 Írás WhatsAppon</a>
+<p style="margin-top:24px;font-size:15px">Vagy hívjon: <a class="tel" style="font-size:22px" href="tel:+36702668663">+36 70 266 8663</a><br>E-mail: racz-kalman@hotmail.com</p></div></section>
+
+<footer><div>© 2024 Rácz-Festő Bau Kft.</div><div>Szeged, Dorozsmai út 65.</div></footer>
+
+<a class="wa-float" href="https://wa.me/36702668663?text=Szia!%20%C3%81raj%C3%A1nlatot%20szeretn%C3%A9k%20k%C3%A9rni%20fest%C3%A9sre." target="_blank" aria-label="WhatsApp"><svg viewBox="0 0 32 32"><path d="M16 3C9.4 3 4 8.4 4 15c0 2.1.6 4.2 1.6 6L4 29l8.2-1.5c1.2.6 2.5.9 3.8.9 6.6 0 12-5.4 12-12S22.6 3 16 3zm0 21.8c-1.8 0-3.6-.5-5.1-1.4l-.4-.2-4.9.9.9-4.7-.3-.4c-1-1.6-1.6-3.5-1.6-5.4 0-5.4 4.5-9.9 10.4-9.9 5.7 0 9.9 4.3 9.9 9.9 0 5.6-4.3 10.2-8.9 10.2zm5.5-7.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.2-.4-2.3-1.4-.8-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.3-.7.3-1.3.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg></a>
+</body></html>
